@@ -1,0 +1,9 @@
+{block content}
+<table>
+    <tr>
+        <th>Data</th>
+    </tr>
+    <tr n:foreach="$rows as $row">
+        <td>{$row['createdAt']|date('d.m.Y H:i:s')}</td>
+    </tr>
+</table>

@@ -1,0 +1,10 @@
+services:
+	- App\Core\RouterFactory::createRouter
+	- App\Config(@container::getParameters())
+
+
+search:
+	-	in: %appDir%
+		classes:
+			- *Factory
+			- *Facade

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="{$basePath}/css/style.css">
+	<title>{ifset title}{include title|stripHtml} | {/ifset}Nette Web</title>
+</head>
+
+<body>
+	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+
+	<ul>
+		<li><a n:href="Home:meme">Akce 1 - meme</a></li>
+		<li><a n:href="Home:names">Akce 2 - names</a></li>
+		<li><a n:href="Home:numbers">Akce 3 - numbers</a></li>
+		<li><a n:href="Home:interval">Akce 4 - interval</a></li>
+		<li><a n:href="Home:calculation">Akce 5 - calculation</a></li>
+	</ul>
+
+	{include content}
+
+	{block scripts}
+	<script src="https://unpkg.com/nette-forms@3/src/assets/netteForms.js"></script>
+	{/block}
+</body>
+</html>

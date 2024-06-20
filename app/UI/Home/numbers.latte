@@ -1,0 +1,9 @@
+{block content}
+<table>
+    <tr>
+        <th>Výpočty</th>
+    </tr>
+    <tr n:foreach="$rows as $row">
+        <td>{$row['firstNumber']} / {$row['secondNumber']} = {$row['thirdNumber']}</td>
+    </tr>
+</table>
