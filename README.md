@@ -40,7 +40,7 @@ Shows date and times in interval -1 month and +1 month
 
 ### Action 5
 
-Shows correct math calculations. It handles the arithmetic operations of addition, subtraction, multiplication, and division on both sides of an equation. Can't work with parentheses.
+Shows correct math calculations. It handles the arithmetic operations of addition, subtraction, multiplication, and division on both sides of an equation. Can't work with parentheses and prioritizing operations.
 
 
 
